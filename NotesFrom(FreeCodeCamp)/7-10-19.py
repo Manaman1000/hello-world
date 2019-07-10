@@ -77,10 +77,70 @@ print("Done with Loop")
 
 ####################################################################################################################################
 
+## FOR LOOPS
+
+friends = ["George", "Pankaj", "Sarah", "Gabby", "Jesse"]
+
+for index in friends:
+    print(index)
+    
+for index in range(len(friends)):
+    print(friends[index])
+    
+for index in range(5):
+    if index == 0:
+        print("First Iteration")
+    else:
+        print("Not First")
+    
+for index in range(7,12):
+    print(index)
+    
+for letter in "Giraffe Academy":
+    print(letter)
+
+####################################################################################################################################
+# Exponents Function
+# GOAL: Create a function that will take a base number and raise it to a power numer
+
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+    
+print(raise_to_power(2,3))
 
 
 
 
+####################################################################################################################################
+## 2-D lists and Nested Loops
+
+#Each item in this list, is going to be another array/list
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+
+print(number_grid[0][0])
+
+for row in number_grid:
+    for column in row:
+        print(column)
 
 
 
+####################################################################################################################################
+
+
+
+
+####################################################################################################################################
+
+
+
+
+####################################################################################################################################
