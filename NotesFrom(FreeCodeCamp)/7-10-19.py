@@ -134,12 +134,40 @@ for row in number_grid:
 
 
 ####################################################################################################################################
+## Translators
+## GOAL: Create a program that changes any vowel in any string into a "g"
+## deals with nested if statements, and some char/string operations
 
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+    
+print(translate(input("Enter a phrase: ")))
 
 
 
 ####################################################################################################################################
+## Try-Except catches (Catching Errors)
 
+## Always (when catching expcept )
+
+
+try:
+    answer = 10/0
+    number = int(input("Enter a number: "))
+    print(number)
+except ZeroDivisionError as err:
+    print(err)
+except ValueError:
+    print("invalid input")
 
 
 
